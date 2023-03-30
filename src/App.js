@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+
+//the name of component we can change, its not necesary to use the same name that function
+import MyComponent from './components/greet'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Other way to print in display */}
+      {/* <MyComponent /> */}
+      <MyComponent></MyComponent>
     </div>
   );
 }
